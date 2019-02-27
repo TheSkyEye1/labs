@@ -1,0 +1,62 @@
+﻿<Window x:Class="NormalWpfApp.Notebook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NormalWpfApp"
+        mc:Ignorable="d"
+        Title="Notebook" Height="1080" Width="1920">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.85" ScaleY="0.85"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="brdr" TextBlock.Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6DBDE8" Offset="0.301"/>
+                <GradientStop Color="#FF1882EF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="notebox" HorizontalAlignment="Left" Height="720" Margin="50,100,0,0" VerticalAlignment="Top" Width="1300" Background="#FFAFD5EA" Foreground="#FF072742" BorderBrush="{x:Null}" FontSize="48" FontFamily="Malgun Gothic"/>
+        <Button x:Name="addbox" Content="Add" HorizontalAlignment="Left" Height="108" Margin="50,870,0,0" VerticalAlignment="Top" Width="384" Foreground="#FF072742" FontSize="48" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Click="Addbox_Click" MouseEnter="Addbox_MouseEnter" MouseLeave="Addbox_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="nbt" MaxLength="75" HorizontalAlignment="Left" Height="108" Margin="439,870,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="911" Background="#FFAFD5EA" BorderBrush="{x:Null}" Foreground="#FF072742" SelectionBrush="#FF072742" FontFamily="Malgun Gothic" FontSize="45" MouseEnter="Nbt_MouseEnter" Text="write here your most terrible secrets :)"/>
+        <Button x:Name="BackBnb" Content="Back" HorizontalAlignment="Left" Height="108" Margin="1454,870,0,0" VerticalAlignment="Top" Width="384" FontFamily="Malgun Gothic" FontSize="48" Click="BackBnb_Click" Foreground="#FF072742" MouseEnter="BackBnb_MouseEnter" MouseLeave="BackBnb_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="nbtl" HorizontalAlignment="Left" Height="95" Margin="50,0,0,0" TextWrapping="Wrap" Text="Text store" VerticalAlignment="Top" Width="1300" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF040A0F" FontSize="72" FontFamily="Malgun Gothic" IsEnabled="False"/>
+        <CheckBox x:Name="ruscknb" Content="CheckBox" HorizontalAlignment="Left" Height="18" Margin="1804,15,0,0" VerticalAlignment="Top" Width="98" Checked="Ruscknb_Checked" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

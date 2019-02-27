@@ -1,0 +1,53 @@
+﻿<Window x:Class="NormalWpfApp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NormalWpfApp"
+        mc:Ignorable="d"
+        Title="Window1" Height="1080" Width="1920">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.85" ScaleY="0.85"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="brdr" TextBlock.Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/walpaper.jpg"/>
+        </Grid.Background>
+        <Button x:Name="BackB" Content="Back" HorizontalAlignment="Center" Height="108" Margin="0,800,0,0" VerticalAlignment="Center" Width="384" BorderBrush="{x:Null}" Foreground="#FF0A131C" FontSize="48" Opacity="0.8" FontFamily="Malgun Gothic" Click="BackB_Click" MouseEnter="BackB_MouseEnter" MouseLeave="BackB_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF81D8EC" Offset="0"/>
+                    <GradientStop Color="#FF1B74AC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="First" Content="Button" HorizontalAlignment="Center" Height="108" Margin="-1200,-350,0,0" VerticalAlignment="Center" Width="384" Background="#FF1C75AD" Opacity="0.82" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="First_Click" MouseEnter="First_MouseEnter" MouseLeave="First_MouseLeave"/>
+        <Button x:Name="Second" Content="Button" HorizontalAlignment="Center" Height="108" Margin="-1200,0,0,0" VerticalAlignment="Center" Width="384" Background="#FF1B74AC" Opacity="0.82" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="Second_Click" MouseEnter="Second_MouseEnter" MouseLeave="Second_MouseLeave"/>
+        <Button x:Name="Third" Content="Button" HorizontalAlignment="Center" Height="108" Margin="-1200,350,0,0" VerticalAlignment="Center" Width="384" Background="#FF1B74AC" Opacity="0.82" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="Third_Click" MouseEnter="Third_MouseEnter" MouseLeave="Third_MouseLeave"/>
+        <Button x:Name="Forth" Content="Button" HorizontalAlignment="Center" Height="108" Margin="1200,-350,0,0" VerticalAlignment="Center" Width="384" Background="#FF1B74AC" Opacity="0.8" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="Forth_Click" MouseEnter="Forth_MouseEnter" MouseLeave="Forth_MouseLeave"/>
+        <Button x:Name="Fith" Content="Button" HorizontalAlignment="Center" Height="108" Margin="1200,0,0,0" VerticalAlignment="Center" Width="384" Background="#FF1B74AC" Opacity="0.8" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="Fith_Click" MouseEnter="Fith_MouseEnter" MouseLeave="Fith_MouseLeave"/>
+        <Button x:Name="Sixth" Content="Button" HorizontalAlignment="Center" Height="108" Margin="1200,350,0,0" VerticalAlignment="Center" Width="384" Background="#FF1B74AC" Opacity="0.75" FontSize="36" FontFamily="Malgun Gothic" BorderBrush="{x:Null}" Foreground="#FF0A131C" Click="Sixth_Click" MouseEnter="Sixth_MouseEnter" MouseLeave="Sixth_MouseLeave"/>
+        <CheckBox x:Name="rusck" Content="CheckBox" HorizontalAlignment="Left" Height="25" Margin="198,962,0,0" VerticalAlignment="Top" Width="82" Checked="Rusck_Checked" Visibility="Hidden"/>
+    </Grid>
+</Window>

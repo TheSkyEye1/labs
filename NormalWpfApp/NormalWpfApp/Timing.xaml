@@ -1,0 +1,88 @@
+﻿<Window x:Class="NormalWpfApp.Timing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NormalWpfApp"
+        mc:Ignorable="d"
+        Title="Timing" Height="1080" Width="1920">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.85" ScaleY="0.85"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="brdr" TextBlock.Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Content}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6DBDE8" Offset="0.301"/>
+                <GradientStop Color="#FF1882EF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Stoper"  Content="Stop" HorizontalAlignment="center" Height="108" Margin="-300,0,0,300" VerticalAlignment="bottom" Width="384" BorderBrush="{x:Null}" Foreground="#FF072742" FontSize="48" FontFamily="Malgun Gothic" Click="Stoper_Click" MouseEnter="Stoper_MouseEnter" MouseLeave="Stoper_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Starter" Content="Start" HorizontalAlignment="center" Height="108" Margin="-1100,0,0,300" VerticalAlignment="bottom" Width="384" BorderBrush="{x:Null}" Foreground="#FF072742" FontSize="48" FontFamily="Malgun Gothic" Click="Starter_Click" MouseEnter="Starter_MouseEnter" MouseLeave="Starter_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Reseter"  Content="Reset" HorizontalAlignment="center" Height="108" Margin="500,0,0,300" VerticalAlignment="bottom" Width="384" BorderBrush="{x:Null}" Foreground="#FF072742" FontSize="48" FontFamily="Malgun Gothic" Click="Reseter_Click" MouseEnter="Reseter_MouseEnter" MouseLeave="Reseter_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Backer" Content="Back" HorizontalAlignment="Left" Height="108" Margin="1518,931,0,0" VerticalAlignment="Top" Width="384" Foreground="#FF072742" BorderBrush="{x:Null}" FontSize="48" FontFamily="Malgun Gothic" Click="Backer_Click" MouseEnter="Backer_MouseEnter" MouseLeave="Backer_MouseLeave">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF48BFFF" Offset="0"/>
+                    <GradientStop Color="#FF144A81" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Secer" Content="Second" HorizontalAlignment="Left" Height="100" Margin="214,821,0,0" VerticalAlignment="Top" Width="100" BorderBrush="{x:Null}" Background="#FF236CA5" Foreground="White" FontSize="24" Click="Secer_Click"/>
+        <Button x:Name="Miner" Content="Minute" HorizontalAlignment="Left" Height="100" Margin="356,821,0,0" VerticalAlignment="Top" Width="100" BorderBrush="{x:Null}" Background="#FF236CA5" Foreground="White" FontSize="24" Click="Miner_Click"/>
+        <Button x:Name="Houer" Content="Hour" HorizontalAlignment="Left" Height="100" Margin="498,821,0,0" VerticalAlignment="Top" Width="100" Background="#FF236CA5" BorderBrush="{x:Null}" Foreground="White" FontSize="24" Click="Houer_Click"/>
+        <CheckBox x:Name="secbox" Content="CheckBox" HorizontalAlignment="Left" Margin="223,925,0,0" VerticalAlignment="Top" IsChecked="True" Visibility="Hidden"/>
+        <CheckBox x:Name="minbox" Content="CheckBox" HorizontalAlignment="Left" Margin="366,925,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,0.067" IsChecked="True" Visibility="Hidden"/>
+        <CheckBox x:Name="houbox" Content="CheckBox" HorizontalAlignment="Left" Margin="509,926,0,0" VerticalAlignment="Top" IsChecked="True" Visibility="Hidden"/>
+        <Label x:Name="hourti" Content="00" HorizontalAlignment="Left" Height="384" Margin="214,232,0,0" VerticalAlignment="Top" Width="384" FontSize="300"/>
+        <Label x:Name="minuti" Content="00" HorizontalAlignment="Left" Height="384" Margin="614,232,0,0" VerticalAlignment="Top" Width="384" FontSize="300"/>
+        <Label x:Name="secoti" Content="00" HorizontalAlignment="Left" Height="384" Margin="1014,232,0,0" VerticalAlignment="Top" Width="384" FontSize="300"/>
+        <Label x:Name="doub1" Content=":" HorizontalAlignment="Left" Height="150" Margin="569,395,0,0" VerticalAlignment="Top" Width="30" FontSize="100"/>
+        <Label x:Name="doub2" Content=":" HorizontalAlignment="Left" Height="150" Margin="979,395,0,0" VerticalAlignment="Top" Width="30" FontSize="100"/>
+        <Label x:Name="seclb" Content="On" HorizontalAlignment="Left" Height="50" Margin="239,921,0,0" VerticalAlignment="Top" Width="50" Foreground="White" FontSize="24"/>
+        <Label x:Name="minlb" Content="On" HorizontalAlignment="Left" Height="50" Margin="382,921,0,0" VerticalAlignment="Top" Width="50" Foreground="White" FontSize="24"/>
+        <Label x:Name="houlb" Content="On" HorizontalAlignment="Left" Height="50" Margin="526,921,0,0" VerticalAlignment="Top" Width="50" Foreground="White" FontSize="24"/>
+        <CheckBox x:Name="ruscktim" Content="CheckBox" HorizontalAlignment="Left" Margin="1798,38,0,0" VerticalAlignment="Top" Checked="Ruscktim_Checked" Visibility="Hidden"/>
+    </Grid>
+</Window>
