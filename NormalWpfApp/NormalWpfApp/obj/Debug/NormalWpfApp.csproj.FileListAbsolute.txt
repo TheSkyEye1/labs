@@ -27,3 +27,32 @@ C:\Users\golov\OneDrive\Рабочий стол\project resource\NormalWpfApp\No
 C:\Users\golov\OneDrive\Рабочий стол\project resource\NormalWpfApp\NormalWpfApp\obj\Debug\Filework.baml
 C:\Users\golov\OneDrive\Рабочий стол\project resource\NormalWpfApp\NormalWpfApp\obj\Debug\Secret.g.cs
 C:\Users\golov\OneDrive\Рабочий стол\project resource\NormalWpfApp\NormalWpfApp\obj\Debug\Secret.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\bin\Debug\NormalWpfApp.exe.config
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\bin\Debug\NormalWpfApp.exe
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\bin\Debug\NormalWpfApp.pdb
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.csprojAssemblyReference.cache
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Calc.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Filework.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\MainWindow.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\MenuW.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Notebook.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Planetary.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Secret.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Timing.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\App.g.cs
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp_MarkupCompile.cache
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp_MarkupCompile.lref
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Calc.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Filework.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\MainWindow.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\MenuW.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Notebook.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Planetary.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Secret.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\Timing.baml
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.g.resources
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.Properties.Resources.resources
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.csproj.GenerateResource.cache
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.csproj.CoreCompileInputs.cache
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.exe
+C:\Users\golov\OneDrive\Рабочий стол\lab1\labs\NormalWpfApp\NormalWpfApp\obj\Debug\NormalWpfApp.pdb
