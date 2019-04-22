@@ -1,0 +1,15 @@
+C:\Users\golov\source\repos\videoplayer\videoplayer\bin\Debug\videoplayer.exe.config
+C:\Users\golov\source\repos\videoplayer\videoplayer\bin\Debug\videoplayer.exe
+C:\Users\golov\source\repos\videoplayer\videoplayer\bin\Debug\videoplayer.pdb
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.csprojAssemblyReference.cache
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\MainWindow.g.cs
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\App.g.cs
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer_MarkupCompile.cache
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer_MarkupCompile.lref
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\MainWindow.baml
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.g.resources
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.Properties.Resources.resources
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.csproj.GenerateResource.cache
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.csproj.CoreCompileInputs.cache
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.exe
+C:\Users\golov\source\repos\videoplayer\videoplayer\obj\Debug\videoplayer.pdb
