@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SQLite;
 
 namespace BcpaTbIй_so_per
 {
@@ -139,9 +140,11 @@ namespace BcpaTbIй_so_per
                         if (nebo == 100 - allah)
                         {
                             Timer.Stop();
+                            logic.vstavlatorvbd(((min * 60) + sec), names.Text, score);
                             MessageBox.Show("Победа");
                             umnozigifashizm.IsEnabled = true;
                             boomer.IsEnabled = true;
+                            
                         };
                     }
                     else
@@ -160,6 +163,7 @@ namespace BcpaTbIй_so_per
                             }
                         }
                         Timer.Stop();
+                        logic.vstavlatorvbd(((min * 60)+sec), names.Text, score);
                         MessageBox.Show("Проигрыш");
                         gridyc.IsEnabled = false;
                         umnozigifashizm.IsEnabled = true;
@@ -221,6 +225,12 @@ namespace BcpaTbIй_so_per
 
         }
 
-        
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            int time = (min * 60) + sec;
+            if(e.Key == Key.B)
+                somegrid.ItemsSource = logic.vizivator_imeni();
+            somegrid.Items.Refresh();
+        }
     }
 }

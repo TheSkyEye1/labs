@@ -3,12 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SQLite;
 
 namespace BcpaTbIй_so_per
 {
     class GameLogic
     {
        public int[,] gr;
+
+        public class data
+        {
+            public int uid { get; set; }
+            public string names { get; set; }
+            public string time { get; set; }
+            public int score { get; set; }
+        }
+
+        SQLiteConnection m_dbConnection;
 
 
         public bool tryer(int x, int y)
@@ -151,5 +162,57 @@ namespace BcpaTbIй_so_per
             return gr[x, y];
         }
 
+
+        List<data> hights = new List<data>();
+
+
+        // MainWindow hehe = new MainWindow();
+        public List<data> vizivator_imeni()
+        {
+            int i = 0;
+            string paths = (@"Z:\worktable\kyrs\BcpaTbIй so-per\hightscores.db");
+            m_dbConnection = new SQLiteConnection("Data Source= " + paths + ";Version=3;");
+            m_dbConnection.Open();
+            string sql = "SELECT * FROM full ORDER BY scores DESC";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                i++;
+                data st = new data
+                {
+                    
+                    names = reader["name"].ToString(),
+                    score = int.Parse(reader["scores"].ToString()),
+                    time = (reader["time"].ToString()),
+                    uid = i
+                };
+                hights.Add(st);
+                
+            }
+            m_dbConnection.Close();
+            return (hights);
+        }
+        public void vstavlatorvbd(int time, string name, int score)
+        {
+            string paths = (@"Z:\worktable\kyrs\BcpaTbIй so-per\hightscores.db");
+            m_dbConnection = new SQLiteConnection("Data Source= " + paths + ";Version=3;");
+            m_dbConnection.Open();
+            string sql2 = "insert into  full ( name , scores , time ) VALUES (" +" '"+ name + "' "  + "," + " " + score + " " + "," + " " + time + " " + ")";
+            SQLiteCommand command = new SQLiteCommand(sql2, m_dbConnection);
+            command.ExecuteNonQuery();
+            m_dbConnection.Close();
+        }
+
+            
+
+           // hehe.somegrid.ItemsSource = hights;
+           // hehe.somegrid.Items.Refresh();
+           
+
+
+
+        }
+
     }
-}
+
