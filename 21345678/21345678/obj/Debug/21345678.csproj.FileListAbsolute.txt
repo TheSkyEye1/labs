@@ -1,0 +1,15 @@
+C:\Users\Сергей\source\repos\21345678\21345678\bin\Debug\21345678.exe.config
+C:\Users\Сергей\source\repos\21345678\21345678\bin\Debug\21345678.exe
+C:\Users\Сергей\source\repos\21345678\21345678\bin\Debug\21345678.pdb
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.csprojAssemblyReference.cache
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\MainWindow.g.cs
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\App.g.cs
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678_MarkupCompile.cache
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678_MarkupCompile.lref
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\MainWindow.baml
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.g.resources
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\_21345678.Properties.Resources.resources
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.csproj.GenerateResource.cache
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.exe
+C:\Users\Сергей\source\repos\21345678\21345678\obj\Debug\21345678.pdb
